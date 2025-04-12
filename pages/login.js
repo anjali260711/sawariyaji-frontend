@@ -16,8 +16,10 @@ export default function Login() {
       if (res.data.role === 'admin') router.push('/admin');
       else router.push('/user');
     } catch (err) {
+      console.error(err); // now err is used
       setMsg('Invalid credentials');
     }
+    
   };
 
   return (

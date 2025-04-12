@@ -22,8 +22,11 @@ export default function Signup() {
       await API.post('/auth/verify-otp', { ...form, otp });
       setMsg('Signup successful!');
     } catch (err) {
-      setMsg('Verification failed');
+      console.error(err);
+      setMsg('Error sending OTP');
     }
+    
+    
   };
 
   return (
