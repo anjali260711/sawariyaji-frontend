@@ -12,9 +12,11 @@ export default function Signup() {
     try {
       await API.post('/auth/send-otp', { mobile: form.mobile });
       setStep(2);
-    } catch (err) {
+    }catch (err) {
+      console.error(err); // Add this
       setMsg('Error sending OTP');
     }
+    
   };
 
   const handleVerify = async () => {
