@@ -33,7 +33,7 @@ export default function Signup() {
 
   return (
     <div className="max-w-md mx-auto mt-10">
-      <h1 className="text-xl font-bold mb-4">User Signup</h1>
+      <center><h1 className="text-xl font-bold mb-4">User Signup</h1></center>
       {step === 1 ? (
         <>
           <InputField label="Name" onChange={e => setForm({ ...form, name: e.target.value })} />
