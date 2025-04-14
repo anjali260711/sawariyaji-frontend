@@ -24,7 +24,7 @@ export default function Login() {
   return (
     <div
       style={{
-        backgroundImage: 'url("/bg.jpg")', // Make sure bg.jpg is in the public folder
+        backgroundImage: 'url("/login.jpg")', // Make sure bg.jpg is in the public folder
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         minHeight: '100vh',
